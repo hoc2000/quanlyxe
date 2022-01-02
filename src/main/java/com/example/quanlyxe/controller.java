@@ -126,7 +126,7 @@ public class controller implements Initializable {
             new Truck(2, 5678, "Nguyễn Mạnh Long", 71, 6),
             new SmallCar(3, 9101, "Đặng Trung Anh", 54),
             new SmallCar(4, 1121, "Quang Trung", 32),
-            new Truck(5, 3141, "Nguyễn Huệ", 45, 5)
+            new Truck(5, 3141, "Nguyễn Huệ", 45, 4)
     );
 
     public controller() {

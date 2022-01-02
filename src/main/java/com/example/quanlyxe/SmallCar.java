@@ -1,11 +1,10 @@
 package com.example.quanlyxe;
 
 import java.time.Year;
+import java.util.ArrayList;
 
 public class SmallCar extends Car {
     private final static int SmallCarPrice = 1000000;
-
-
 
     public SmallCar(int ID,int carNumber, String carOwner, int month) {
         super(ID,carNumber, carOwner, month);
@@ -14,13 +13,10 @@ public class SmallCar extends Car {
         this.PriceInt = (int)Price;
         this.Date =DateConvert();
         setWeight(0);
-
-
     }
 
     public SmallCar() {
     }
-
 
     @Override
     public double PriceCalculate() {
@@ -33,12 +29,10 @@ public class SmallCar extends Car {
     }
 
     public String DateConvert(){
-        int month =Month % 12;
+        int newMonth = Month % 12;
         int year = Month/12;
-        return month+" tháng "+ year +" năm";
+        return newMonth+" tháng "+ year +" năm";
     }
-
-
 
     public void InThongTin() {
         System.out.println("ID:"+getID()+"||Loai xe:" + getTypeCar() + "||Bien so Xe:" + getCarNumber() +

@@ -1,7 +1,9 @@
 package com.example.quanlyxe;
 
+
 public class Truck extends Car {
     private final static int HeSoTien = 700000;
+
     public Truck() {
     }
 
@@ -12,9 +14,6 @@ public class Truck extends Car {
         this.Price= PriceCalculate();
         this.PriceInt = (int)Price;
         this.Date =DateConvert();
-
-
-
     }
 
     public int getWeight() {
@@ -35,9 +34,9 @@ public class Truck extends Car {
 
     }
     public String DateConvert(){
-        int month =Month % 12;
+        int newMonth = Month % 12;
         int year = Month/12;
-        return month+" tháng "+ year +" năm";
+        return newMonth+" tháng "+ year +" năm";
     }
 
     public void InThongTin() {
@@ -47,6 +46,4 @@ public class Truck extends Car {
                 "||trong tai:" + getWeight() + " " +
                 "||Tien:" + PriceCalculate());
     }
-
-
 }
